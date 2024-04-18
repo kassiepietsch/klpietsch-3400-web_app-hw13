@@ -244,7 +244,7 @@ def search(page=1, per_page=10, offset=0):
             )
     else:
         logging.info("No search string provided.")
-        return redirect(url_for("index.html"))
+        return redirect(url_for("index"))
 
 
 @app.route("/diagnostics", methods=["GET"])
